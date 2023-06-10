@@ -78,7 +78,7 @@ def middle_crypto_pre():
                 except:
                     w = 0
 
-            res_dict = {'pingjia':pingjia,'usdt_logo':usdt_logo,'logo':logo,'max_value_time':max_value_time,'min_value_time':min_value_time}
+            res_dict = {'value':1,'pingjia':pingjia,'usdt_logo':usdt_logo,'logo':logo,'max_value_time':max_value_time,'min_value_time':min_value_time}
             ans_str = json.dumps(res_dict)
 
     return ans_str
