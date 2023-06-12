@@ -69,16 +69,12 @@ def middle_crypto_pre():
                     api_res = r.content.decode('utf-8')
                     api_res = json.loads(api_res)
                     pingjia = api_res['pingjia']
-                    usdt_logo = api_res['usdt_logo']
-                    logo = api_res['logo']
-                    max_value_time = api_res['max_value_time']
-                    min_value_time = api_res['min_value_time']
                     #print(r_value,today_price,up_close_date,up_start_price)
                     w = 1
                 except:
                     w = 0
 
-            res_dict = {'value':1,'pingjia':pingjia,'usdt_logo':usdt_logo,'logo':logo,'max_value_time':max_value_time,'min_value_time':min_value_time}
+            res_dict = {'value':1,'pingjia':pingjia}
             ans_str = json.dumps(res_dict)
 
     return ans_str
